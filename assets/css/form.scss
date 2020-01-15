@@ -1,0 +1,56 @@
+/* Scss Document */
+#transport_types_block {
+	margin-bottom: 10px;
+	display: none;
+}
+
+.for-form select {
+	height: auto;
+	padding: 8px 1em 9px;
+	&:invalid {
+		color: #a9a9a9;
+	}
+	option {
+		&[disabled] {
+			color: #a9a9a9;
+		}
+		color: black;
+	}
+}
+
+.switcher [class*="col-"] {
+	&:first-child {
+		padding-right: 0;
+	}
+	&:last-child {
+		padding-left: 0;
+	}
+}
+
+.for-form {
+	.switcher [class*="col-"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	form {
+		&:not(.hourly) select:not(.input-currency-select), &.hourly .input-to {
+			display: none;
+		}
+	}
+}
+
+.switcher {
+	input {
+		display: none;
+		&:checked + label {
+			opacity: 1;
+		}
+	}
+	.icon-route, .icon-clock {
+		display: inline-block;
+		font-size: 1.6em;
+		margin-right: 0.4em;
+		vertical-align: middle;
+		margin-bottom: 0.2em;
+	}
+}

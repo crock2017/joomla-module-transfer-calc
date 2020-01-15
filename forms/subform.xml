@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2018 Crock. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * crock@vodafone.de
+ * September 04, 2018
+ */
+-->
+<form>
+  
+	
+		
+		<field name="car_img" type="media"  directory="cars" label="image" preview="true" preview_width="50" preview_height="20"  >
+</field>
+		<field name="car_class" type="list" default="" required="true" label="Select a class" description="">
+			 <option value="">Please Select</option>
+			 <option value="econom">Эконом</option>
+			 <option value="business">Бизнес</option>
+			 <option value="premium">Премиум</option>
+			 <option value="van">Минивэн</option>
+			 <option value="minibus">Микроавтобус</option>
+			 <option value="bus">Автобус</option>
+			 <option value="limousine">Лимузин</option>
+			 <option value="helicopter">Вертолет</option>
+</field>
+		<field name="car_name" type="text" default="" required="true" label="Set a name for class" description="">
+			 
+</field>
+	
+		<field name="car_persons" type="number" default="1"  label="Select persons" description="" min="0" max="10" step="1" />
+			
+
+		<field name="car_sutecase" type="number" default="1" label="Choose sutecases" description="" min="0" max="10" step="1" />
+        
+         <field name="car_price" type="text" default="" label="Enter price per km" description="" filter="integer" />  
+		
+		<field name="car_price_hour" type="text" default="" label="Enter price per hour" description="" filter="integer" />  
+      
+</form>
